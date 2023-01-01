@@ -1,0 +1,220 @@
+{
+  "id": "5422b297-3754-4044-8ad0-1bf0569ac02f",
+  "version": "2.0",
+  "name": "Final Project",
+  "url": "https://www.freelancer.com/dashboard",
+  "tests": [{
+    "id": "673c59a1-39d2-4dbf-b11c-5c01d051942b",
+    "name": "browse for freelancer",
+    "commands": [{
+      "id": "d60022cd-5219-43f3-b4fc-95cde4e4ffea",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.freelancer.com/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "99110833-8b4e-49ea-a9a5-70248bfb9ff7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "464a9563-b65e-4031-a9ac-5226d2e81fe9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-14 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d92afa2d-d018-485c-a892-4ee7c4496250",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b541b83f-5b93-47da-a080-a29856cadd12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .LinkItem > .LinkElement",
+      "targets": [
+        ["css=.ng-star-inserted > .LinkItem > .LinkElement", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-0']/div/fl-callout-content/div/div/app-browse/fl-bit/app-browse-links/fl-bit/fl-bit[2]/fl-grid/fl-col[3]/app-browse-links-item/fl-link/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/search/users')]", "xpath:href"],
+        ["xpath=//fl-col[3]/app-browse-links-item/fl-link/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "832f0d1d-83ca-4c2b-99d7-e20a4f8491bc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-10 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-10 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//fl-callout[4]/fl-callout-trigger/fl-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9308a892-fa76-411d-8104-ce678a26b7b5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-10 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-10 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//fl-callout[4]/fl-callout-trigger/fl-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78cce851-f5e9-4943-9251-b7f708fa016b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97a70f38-c732-4453-82c7-d482b2d5d5b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=min-hourly-rate-input",
+      "targets": [
+        ["id=min-hourly-rate-input", "id"],
+        ["css=#min-hourly-rate-input", "css:finder"],
+        ["xpath=//input[@id='min-hourly-rate-input']", "xpath:attributes"],
+        ["xpath=//fl-bit[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8fa807c-e1ee-4a62-9bd9-f48f42d86726",
+      "comment": "",
+      "command": "type",
+      "target": "id=min-hourly-rate-input",
+      "targets": [
+        ["id=min-hourly-rate-input", "id"],
+        ["css=#min-hourly-rate-input", "css:finder"],
+        ["xpath=//input[@id='min-hourly-rate-input']", "xpath:attributes"],
+        ["xpath=//fl-bit[2]/input", "xpath:position"]
+      ],
+      "value": "5"
+    }, {
+      "id": "70b8f531-f97a-4844-8702-c1d4e03b46b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-untouched:nth-child(2) .ng-untouched > .ng-star-inserted:nth-child(1) .CheckboxLabel",
+      "targets": [
+        ["css=.ng-untouched:nth-child(2) .ng-untouched > .ng-star-inserted:nth-child(1) .CheckboxLabel", "css:finder"],
+        ["xpath=//fl-bit/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Website Design')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b41a04b2-4e72-42ac-bf8f-7a5b8e9edade",
+      "comment": "",
+      "command": "click",
+      "target": "css=.NativeElementContainer > .ng-tns-c369-209",
+      "targets": [
+        ["css=.NativeElementContainer > .ng-tns-c369-209", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//fl-bit[4]/app-search-checklist-filter/fl-search/fl-input/fl-bit/fl-bit/fl-bit/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6278f1b8-2734-4099-8951-0b95fffd21c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(2) > .BitsListItem .NativeElement",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(2) > .BitsListItem .NativeElement", "css:finder"],
+        ["xpath=//fl-list-item[2]/fl-bit/fl-bit/fl-bit/fl-bit/fl-text/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c00c07c2-0777-48c9-87ac-8e192e2051a7",
+    "name": "Mail validation",
+    "commands": [{
+      "id": "fc877f79-41be-4264-a83e-d15c0207b0ea",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.freelancer.com/user/settings/email-and-notifications",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3362016-aedf-4f59-a84e-58295c2cb716",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "812569d4-6aed-4616-b97e-cc57c9014650",
+      "comment": "",
+      "command": "type",
+      "target": "css=.NativeElementContainer > #password",
+      "targets": [
+        ["css=.NativeElementContainer > #password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//fl-input[@id='password']/fl-bit/fl-bit/fl-bit/input", "xpath:idRelative"],
+        ["xpath=//fl-col[2]/fl-input/fl-bit/fl-bit/fl-bit/input", "xpath:position"]
+      ],
+      "value": "Afrida525@#$"
+    }, {
+      "id": "b59d37d7-8fcd-409c-8769-5dc0d057334e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(1) > .ng-star-inserted > .ButtonElement",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(1) > .ng-star-inserted > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[15]", "xpath:attributes"],
+        ["xpath=//app-email-form-section/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Update email address')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f172ed8-c300-4d8e-acdf-59e190b12ebf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ErrorContainer .NativeElement",
+      "targets": [
+        ["css=.ErrorContainer .NativeElement", "css:finder"],
+        ["xpath=//fl-input[@id='email']/fl-validation-error/fl-bit/fl-text/div", "xpath:idRelative"],
+        ["xpath=//fl-validation-error/fl-bit/fl-text/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73dad9c0-9b0d-4f10-968a-002ff0e33016",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ErrorContainer .NativeElement",
+      "targets": [
+        ["css=.ErrorContainer .NativeElement", "css:finder"],
+        ["xpath=//fl-input[@id='email']/fl-validation-error/fl-bit/fl-text/div", "xpath:idRelative"],
+        ["xpath=//fl-validation-error/fl-bit/fl-text/div", "xpath:position"]
+      ],
+      "value": "New email is the same as the current email."
+    }]
+  }],
+  "suites": [{
+    "id": "564682b0-ab3b-4a8f-912e-33c9ff7530b6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.freelancer.com/lists/money-details_38051916", "https://www.freelancer.com/tasklists/1392317", "https://www.freelancer.com/tasklists/1392349", "https://www.freelancer.com/tasklists/1392439?next=%252Ftasklists", "https://www.freelancer.com/tasklists/1392756?next=%252Ftasklists", "https://www.freelancer.com/dashboard", "https://www.freelancer.com/search/projects", "https://www.freelancer.com/lists/favorites", "https://www.freelancer.com/tasklists/1392756", "https://www.freelancer.com/user/settings/email-and-notifications"],
+  "plugins": []
+}

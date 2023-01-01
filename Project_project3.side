@@ -1,0 +1,1439 @@
+{
+  "id": "deb263ad-1ba0-4922-b48d-d095efffe9ee",
+  "version": "2.0",
+  "name": "Project_project3",
+  "url": "https://www.freelancer.com.bd/",
+  "tests": [{
+    "id": "95332639-bb4e-4150-8da4-233e590a26db",
+    "name": "Title_check",
+    "commands": [{
+      "id": "9247be1a-4731-4a90-b632-b3c9bae0fdc5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93e2855f-9b8b-4a55-86a1-ff9bd1483f76",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "x"
+    }, {
+      "id": "7c7a2164-28d6-4d64-8be4-3d82a7d359e8",
+      "comment": "",
+      "command": "if",
+      "target": "${x}===\"Freelancer\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4ba9463-5598-4264-b1b3-c4ea886bcb36",
+      "comment": "",
+      "command": "echo",
+      "target": "Correct title -'Freelancer' is displayed on the web page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7a11f90-1163-40d1-8030-0d1c62849554",
+      "comment": "",
+      "command": "elseIf",
+      "target": "${x}===\"Dashboard | Freelancer\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cf3165d-04eb-4c78-9ac3-d23553ca7ebe",
+      "comment": "",
+      "command": "echo",
+      "target": "Correct title -'Dashboard | Freelancer' is displayed on the web page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74e203ab-b3d0-4889-8fd1-7dd7901f37a4",
+      "comment": "",
+      "command": "elseIf",
+      "target": "${x}===\"Software IT\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2637f1a3-c199-493b-92ce-0d6cc8d6d829",
+      "comment": "",
+      "command": "echo",
+      "target": "Correct title -'Software IT' is displayed on the web page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37842459-9920-49a2-8451-a900972233e3",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "265c5e93-2484-4455-817a-9379ea1ea146",
+      "comment": "",
+      "command": "echo",
+      "target": "Wrong title  is displayed on the web page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0936c4f-a2d2-45a1-b34a-9dff3fcb4117",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4444a979-c6ec-44b2-b3f8-83185e5b4b50",
+    "name": "Link_test",
+    "commands": [{
+      "id": "376532c6-b80c-43dd-b5b0-869cc416dff3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.freelancer.com.bd/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b300a9e-6447-456c-ab31-b239f5424e46",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1300x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2418cba2-8ec1-4c57-8059-881a06204608",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-14 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "041e3b14-1e79-466b-a398-6a126064446e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8af77da-881d-4d49-8a11-25eda63378f6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.Body:nth-child(2) > fl-grid > .ng-star-inserted:nth-child(1) .LinkElement",
+      "targets": [
+        ["css=.Body:nth-child(2) > fl-grid > .ng-star-inserted:nth-child(1) .LinkElement", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-0']/div/fl-callout-content/div/div/app-browse/fl-bit/app-browse-links/fl-bit/fl-bit[2]/fl-grid/fl-col/app-browse-links-item/fl-link/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/search/projects')])[4]", "xpath:href"],
+        ["xpath=//app-browse-links-item/fl-link/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5556777b-a0a7-4a5b-a308-75b12e57cf60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Body:nth-child(2) > fl-grid > .ng-star-inserted:nth-child(1) .LinkElement",
+      "targets": [
+        ["css=.Body:nth-child(2) > fl-grid > .ng-star-inserted:nth-child(1) .LinkElement", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-0']/div/fl-callout-content/div/div/app-browse/fl-bit/app-browse-links/fl-bit/fl-bit[2]/fl-grid/fl-col/app-browse-links-item/fl-link/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/search/projects')])[4]", "xpath:href"],
+        ["xpath=//app-browse-links-item/fl-link/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cec14dbb-996d-4fe8-bb10-63e0e0a801df",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-14 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fcba914-b94e-4e14-8f02-5f20b919f77f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c6543f8-3586-4c17-9a59-c824431b38a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Body:nth-child(2) .ng-star-inserted:nth-child(2) .LinkElement",
+      "targets": [
+        ["css=.Body:nth-child(2) .ng-star-inserted:nth-child(2) .LinkElement", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-1']/div/fl-callout-content/div/div/app-browse/fl-bit/app-browse-links/fl-bit/fl-bit[2]/fl-grid/fl-col[2]/app-browse-links-item/fl-link/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/search/contests')])[2]", "xpath:href"],
+        ["xpath=//fl-col[2]/app-browse-links-item/fl-link/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a838fe6d-b551-4dde-96e3-948c60262b65",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-15 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-15 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//fl-callout[2]/fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Manage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24894f52-4d72-4e7f-80fb-1f6344b1cc5f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-15 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-15 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//fl-callout[2]/fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Manage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d82b90c9-7033-4c56-8371-02f7345de6bd",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-14 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d46cc8ed-4334-4843-96eb-4b061f35e134",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "410dd76a-2a97-41a0-aec3-31f631da6787",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted > .LinkItem > .LinkElement",
+      "targets": [
+        ["css=.ng-star-inserted > .LinkItem > .LinkElement", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-3']/div/fl-callout-content/div/div/app-browse/fl-bit/app-browse-links/fl-bit/fl-bit[2]/fl-grid/fl-col[3]/app-browse-links-item/fl-link/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/search/users')])[2]", "xpath:href"],
+        ["xpath=//fl-col[3]/app-browse-links-item/fl-link/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76f5b274-f100-43eb-bac9-18ff176490b5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-15 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-15 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//fl-callout[2]/fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Manage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86f8ad03-ba28-43b0-be47-13869f8c139c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-15 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-15 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//fl-callout[2]/fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Manage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87f60f87-bde7-4bc8-867a-799db5aaeb87",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-14 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdca2003-bdbb-4add-ba80-4628d5a531cd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b95a5b5-fa2c-4d25-85e3-1b451a9a38ca",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-14 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f8c5968-bed6-4a1b-895f-4ed478f751b5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "79cdf19f-40c3-4f75-badc-eded47721173",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-15 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-15 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//fl-callout[2]/fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Manage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cb78b20-ae67-4b61-9a62-50c344fc48cc",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-15 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-15 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//fl-callout[2]/fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Manage')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "751fc804-d1d4-49db-ae94-352298d7c947",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-14 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3f4e355-f782-4b52-b6ec-f272dcfa38fd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-14 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//fl-callout-trigger/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Browse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74e8e2b6-4fa1-468b-9395-e9ded2751516",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bookmarks",
+      "targets": [
+        ["linkText=Bookmarks", "linkText"],
+        ["css=.Body:nth-child(2) .ng-star-inserted:nth-child(4) .LinkElement", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-8']/div/fl-callout-content/div/div/app-browse/fl-bit/app-browse-links/fl-bit/fl-bit[2]/fl-grid/fl-col[4]/app-browse-links-item/fl-link/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/jobs/bookmark')]", "xpath:href"],
+        ["xpath=//fl-col[4]/app-browse-links-item/fl-link/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Bookmarks')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c312ca42-ced0-490f-82fe-29492ec9e5e7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Browse Local Jobs",
+      "targets": [
+        ["linkText=Browse Local Jobs", "linkText"],
+        ["css=app-bar-item:nth-child(4) > .BarItem", "css:finder"],
+        ["xpath=//a[contains(text(),'Browse Local Jobs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/jobs/localjobs')]", "xpath:href"],
+        ["xpath=//app-bar-item[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Browse Local Jobs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9603450e-4d20-44fc-872f-35736cc0731e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-right",
+      "targets": [
+        ["css=.pull-right", "css:finder"],
+        ["xpath=(//button[@type='button'])[17]", "xpath:attributes"],
+        ["xpath=//div[@id='lj-update-location-modal']/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9f7fec3-2e3d-4fdf-b5cf-3027d80a0fbf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Browse Categories",
+      "targets": [
+        ["linkText=Browse Categories", "linkText"],
+        ["css=app-bar-item:nth-child(5) > .BarItem", "css:finder"],
+        ["xpath=//a[contains(text(),'Browse Categories')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/job')])[4]", "xpath:href"],
+        ["xpath=//app-bar-item[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Browse Categories')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "10451630-ae90-479f-bb74-46e960e1c401",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projects with My Skills",
+      "targets": [
+        ["linkText=Projects with My Skills", "linkText"],
+        ["css=app-bar-item:nth-child(1) > .BarItem", "css:finder"],
+        ["xpath=//a[contains(text(),'Projects with My Skills')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/jobs/myskills')]", "xpath:href"],
+        ["xpath=//app-bar-item/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Projects with My Skills')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "432be3d1-5ef1-4d62-923c-e07a7560a8d1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "edb718ff-345f-4dff-8a16-7de7f152b8b2",
+    "name": "dashboard validation",
+    "commands": [{
+      "id": "ca08e015-2d02-4ec8-9d75-50c6f95f0fee",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.freelancer.com.bd/post-project",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d3127a0e-3574-4e0e-9e14-54c311044593",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "931x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2b26dcb-2ecd-46a9-a083-f2130c0d4437",
+      "comment": "",
+      "command": "click",
+      "target": "css=.NativeElementContainer > #PjpTitleFieldWithDefaultPlaceholder",
+      "targets": [
+        ["css=.NativeElementContainer > #PjpTitleFieldWithDefaultPlaceholder", "css:finder"],
+        ["xpath=//input[@id='PjpTitleFieldWithDefaultPlaceholder']", "xpath:attributes"],
+        ["xpath=//fl-input[@id='PjpTitleFieldWithDefaultPlaceholder']/fl-bit/fl-bit/fl-bit/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5f989cd-4081-4bff-960f-e9bc3e2de97f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.NextButton .ButtonElement",
+      "targets": [
+        ["css=.NextButton .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//app-form/fl-bit/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bd77089-491a-40b1-9648-8c59debe40c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ValidationError .NativeElement",
+      "targets": [
+        ["css=.ValidationError .NativeElement", "css:finder"],
+        ["xpath=//fl-input[@id='PjpTitleFieldWithDefaultPlaceholder']/fl-validation-error/fl-bit/fl-text/div", "xpath:idRelative"],
+        ["xpath=//fl-validation-error/fl-bit/fl-text/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Please enter a name')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff346a83-8943-4578-bc0b-0a919b272f30",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ValidationError .NativeElement",
+      "targets": [
+        ["css=.ValidationError .NativeElement", "css:finder"],
+        ["xpath=//fl-input[@id='PjpTitleFieldWithDefaultPlaceholder']/fl-validation-error/fl-bit/fl-text/div", "xpath:idRelative"],
+        ["xpath=//fl-validation-error/fl-bit/fl-text/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Please enter a name')]", "xpath:innerText"]
+      ],
+      "value": "Please enter a name"
+    }, {
+      "id": "96d74362-925a-4c12-a26d-7085b27fc81c",
+      "comment": "",
+      "command": "click",
+      "target": "css=fl-validation-error:nth-child(1) .NativeElement",
+      "targets": [
+        ["css=fl-validation-error:nth-child(1) .NativeElement", "css:finder"],
+        ["xpath=//app-description[@id='description']/fl-bit/fl-textarea/fl-bit/fl-validation-error/fl-bit/fl-text/div", "xpath:idRelative"],
+        ["xpath=//fl-bit/fl-validation-error/fl-bit/fl-text/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Please enter a description')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a4a880a-0376-49fa-8b98-fd9ecf2b4d90",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=fl-validation-error:nth-child(1) .NativeElement",
+      "targets": [
+        ["css=fl-validation-error:nth-child(1) .NativeElement", "css:finder"],
+        ["xpath=//app-description[@id='description']/fl-bit/fl-textarea/fl-bit/fl-validation-error/fl-bit/fl-text/div", "xpath:idRelative"],
+        ["xpath=//fl-bit/fl-validation-error/fl-bit/fl-text/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Please enter a description')]", "xpath:innerText"]
+      ],
+      "value": "Please enter a description"
+    }]
+  }, {
+    "id": "68344d0a-6d7b-44bf-82b3-0f610b09a033",
+    "name": "ticket_validation",
+    "commands": [{
+      "id": "6bd37a57-698f-4eb9-932e-281cc72a2d5e",
+      "comment": "",
+      "command": "open",
+      "target": "https://cx.freelancer.com/new-ticket",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "acc6dc4c-69b9-44e1-accc-3d01bcaec6bf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "426e4c40-ba8c-4ede-9f3a-bfdd42fa2daf",
+      "comment": "",
+      "command": "click",
+      "target": "id=ticket_submit",
+      "targets": [
+        ["id=ticket_submit", "id"],
+        ["name=ticket[submit]", "name"],
+        ["css=#ticket_submit", "css:finder"],
+        ["xpath=//button[@id='ticket_submit']", "xpath:attributes"],
+        ["xpath=//div[@id='new_ticket_page']/div/form/div/div[7]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d474f485-baac-4684-9e07-35fa76cfbd30",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bucket > .error-large:nth-child(3)",
+      "targets": [
+        ["css=.bucket > .error-large:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='new_ticket_page']/div/form/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a578b33-e229-45fb-b281-122343b5859a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.bucket > .error-large:nth-child(3)",
+      "targets": [
+        ["css=.bucket > .error-large:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='new_ticket_page']/div/form/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "This value is required"
+    }, {
+      "id": "5f40bd85-1ee1-477c-bca3-001802536511",
+      "comment": "",
+      "command": "click",
+      "target": "css=.error-large:nth-child(2)",
+      "targets": [
+        ["css=.error-large:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='ticket_person_user_email']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0998f4d8-a75a-4911-8d19-507d6617c2cf",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.error-large:nth-child(2)",
+      "targets": [
+        ["css=.error-large:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='ticket_person_user_email']/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "This value is required"
+    }, {
+      "id": "99509635-4274-46cb-a804-e1d636a8adf2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.error-large:nth-child(4)",
+      "targets": [
+        ["css=.error-large:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='new_ticket_page']/div/form/div/div[3]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e6c3ff5-0805-41c7-a523-1d488f1073ab",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.error-large:nth-child(4)",
+      "targets": [
+        ["css=.error-large:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='new_ticket_page']/div/form/div/div[3]/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": "This value is required"
+    }, {
+      "id": "3fc4e932-a298-4fb9-9f2d-a9540efbf678",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ticket_message > .error-large",
+      "targets": [
+        ["css=#ticket_message > .error-large", "css:finder"],
+        ["xpath=//div[@id='ticket_message']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "557ae4d6-bacf-46ec-9771-59237f46d2b4",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ticket_message > .error-large",
+      "targets": [
+        ["css=#ticket_message > .error-large", "css:finder"],
+        ["xpath=//div[@id='ticket_message']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div", "xpath:position"]
+      ],
+      "value": "This value should have 10 characters or more"
+    }]
+  }, {
+    "id": "c999dfb7-f45b-45d2-9ee9-7ad656a5de09",
+    "name": "new_ticket",
+    "commands": [{
+      "id": "ea8acdad-399f-46fa-b738-f1a1149cbbb8",
+      "comment": "",
+      "command": "open",
+      "target": "https://cx.freelancer.com/new-ticket",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d4f52d9-2ee7-41bf-8c83-a9f327e40993",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2328a64f-71da-4646-b5b5-e0fca3996671",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket_person_user_name",
+      "targets": [
+        ["id=ticket_person_user_name", "id"],
+        ["name=ticket[person][user_name]", "name"],
+        ["css=#ticket_person_user_name", "css:finder"],
+        ["xpath=//input[@id='ticket_person_user_name']", "xpath:attributes"],
+        ["xpath=//div[@id='new_ticket_page']/div/form/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Nahida Akther Asha"
+    }, {
+      "id": "bfe0f7a5-0749-43aa-b6bd-e8743a1adc51",
+      "comment": "",
+      "command": "click",
+      "target": "id=ticket_person_user_email_email",
+      "targets": [
+        ["id=ticket_person_user_email_email", "id"],
+        ["name=ticket[person][user_email][email]", "name"],
+        ["css=#ticket_person_user_email_email", "css:finder"],
+        ["xpath=//input[@id='ticket_person_user_email_email']", "xpath:attributes"],
+        ["xpath=//div[@id='ticket_person_user_email']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "707b81b4-688a-4383-b473-cc2479d3752b",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket_person_user_email_email",
+      "targets": [
+        ["id=ticket_person_user_email_email", "id"],
+        ["name=ticket[person][user_email][email]", "name"],
+        ["css=#ticket_person_user_email_email", "css:finder"],
+        ["xpath=//input[@id='ticket_person_user_email_email']", "xpath:attributes"],
+        ["xpath=//div[@id='ticket_person_user_email']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "nahidaasha1@gmail.com"
+    }, {
+      "id": "5151cae5-abdf-41be-b9c0-fe339fa248cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=ticket_subject",
+      "targets": [
+        ["id=ticket_subject", "id"],
+        ["name=ticket[subject]", "name"],
+        ["css=#ticket_subject", "css:finder"],
+        ["xpath=//input[@id='ticket_subject']", "xpath:attributes"],
+        ["xpath=//div[@id='new_ticket_page']/div/form/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7868d83-fedd-46c5-8ae5-1177e32149e6",
+      "comment": "",
+      "command": "type",
+      "target": "id=ticket_subject",
+      "targets": [
+        ["id=ticket_subject", "id"],
+        ["name=ticket[subject]", "name"],
+        ["css=#ticket_subject", "css:finder"],
+        ["xpath=//input[@id='ticket_subject']", "xpath:attributes"],
+        ["xpath=//div[@id='new_ticket_page']/div/form/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "computer science"
+    }, {
+      "id": "da73938a-b7e2-415f-bc77-9cbce84b3a76",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dp-medium-rte",
+      "targets": [
+        ["css=.dp-medium-rte", "css:finder"],
+        ["xpath=//div[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ticket_message']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0c60cb1-1d10-4290-8c9c-11c4d4d9bae3",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.dp-medium-rte",
+      "targets": [
+        ["css=.dp-medium-rte", "css:finder"],
+        ["xpath=//div[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='ticket_message']/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "<p>how to get freelancers to hire for projects.</p>"
+    }, {
+      "id": "be5541b1-5a95-4b0a-8ae0-391fe8e81e63",
+      "comment": "",
+      "command": "click",
+      "target": "id=ticket_submit",
+      "targets": [
+        ["id=ticket_submit", "id"],
+        ["name=ticket[submit]", "name"],
+        ["css=#ticket_submit", "css:finder"],
+        ["xpath=//button[@id='ticket_submit']", "xpath:attributes"],
+        ["xpath=//div[@id='new_ticket_page']/div/form/div/div[7]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8c652ed-e774-4545-9633-229d310a7b31",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "182e875b-53e9-4214-8cba-96279da5604b",
+    "name": "Hire_freelancer case",
+    "commands": [{
+      "id": "ce5b0408-2ec5-4841-8969-fed7d05f5e64",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "603e745b-542a-47ec-8c20-0c3a12b96a44",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "931x768",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3842ea87-f6b2-479f-8e70-afcee4f1bab3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-11 fl-text",
+      "targets": [
+        ["css=.ng-tns-c151-11 fl-text", "css:finder"],
+        ["xpath=//fl-bit[4]/app-mega-menu/fl-callout/fl-callout-trigger/a/fl-bit/fl-text", "xpath:position"],
+        ["xpath=//fl-text[contains(.,'About')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0eabbb4c-2e66-4cc2-af27-01dfd030f779",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-11 > a fl-text",
+      "targets": [
+        ["css=.ng-tns-c151-11 > a fl-text", "css:finder"],
+        ["xpath=//fl-bit[4]/app-mega-menu/fl-callout/fl-callout-trigger/a/fl-bit/fl-text", "xpath:position"],
+        ["xpath=//fl-text[contains(.,'About')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bec9d89-4f4a-4a6c-9b66-2be5dbde9668",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hire a Freelancer",
+      "targets": [
+        ["linkText=Hire a Freelancer", "linkText"],
+        ["css=.CallToActionButtons-button > .ButtonElement", "css:finder"],
+        ["xpath=//a[contains(text(),'Hire a Freelancer')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/post-project')])[2]", "xpath:href"],
+        ["xpath=//fl-bit[2]/fl-button/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hire a Freelancer')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "088e1b9a-89a9-4f11-b381-54a1a4b99682",
+      "comment": "",
+      "command": "click",
+      "target": "css=.NativeElementContainer > #PjpTitleFieldWithDefaultPlaceholder",
+      "targets": [
+        ["css=.NativeElementContainer > #PjpTitleFieldWithDefaultPlaceholder", "css:finder"],
+        ["xpath=//input[@id='PjpTitleFieldWithDefaultPlaceholder']", "xpath:attributes"],
+        ["xpath=//fl-input[@id='PjpTitleFieldWithDefaultPlaceholder']/fl-bit/fl-bit/fl-bit/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b52baa30-68f9-416a-bd8a-f59654b7d6e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.NativeElementContainer > #PjpTitleFieldWithDefaultPlaceholder",
+      "targets": [
+        ["css=.NativeElementContainer > #PjpTitleFieldWithDefaultPlaceholder", "css:finder"],
+        ["xpath=//input[@id='PjpTitleFieldWithDefaultPlaceholder']", "xpath:attributes"],
+        ["xpath=//fl-input[@id='PjpTitleFieldWithDefaultPlaceholder']/fl-bit/fl-bit/fl-bit/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b18c827c-1052-437e-bc1c-374c8d6b10fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.NativeElementContainer > #PjpTitleFieldWithDefaultPlaceholder",
+      "targets": [
+        ["css=.NativeElementContainer > #PjpTitleFieldWithDefaultPlaceholder", "css:finder"],
+        ["xpath=//input[@id='PjpTitleFieldWithDefaultPlaceholder']", "xpath:attributes"],
+        ["xpath=//fl-input[@id='PjpTitleFieldWithDefaultPlaceholder']/fl-bit/fl-bit/fl-bit/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8704bd4b-277c-497b-9f3b-4e0739db5aa9",
+      "comment": "",
+      "command": "type",
+      "target": "css=.NativeElementContainer > #PjpTitleFieldWithDefaultPlaceholder",
+      "targets": [
+        ["css=.NativeElementContainer > #PjpTitleFieldWithDefaultPlaceholder", "css:finder"],
+        ["xpath=//input[@id='PjpTitleFieldWithDefaultPlaceholder']", "xpath:attributes"],
+        ["xpath=//fl-input[@id='PjpTitleFieldWithDefaultPlaceholder']/fl-bit/fl-bit/fl-bit/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "university management using java"
+    }, {
+      "id": "469066f0-5c3f-4fa9-a5b9-b7eee9bb7e24",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextArea",
+      "targets": [
+        ["css=.TextArea", "css:finder"],
+        ["xpath=//app-description[@id='description']/fl-bit/fl-textarea/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9b5be97-2152-4386-9eb4-1b32b0630ba3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextArea",
+      "targets": [
+        ["css=.TextArea", "css:finder"],
+        ["xpath=//app-description[@id='description']/fl-bit/fl-textarea/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80d67db7-ed04-4c9f-a29d-0ae5ca2ac9f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.TextArea",
+      "targets": [
+        ["css=.TextArea", "css:finder"],
+        ["xpath=//app-description[@id='description']/fl-bit/fl-textarea/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1798c59-0157-409f-a828-92afc0bc1f61",
+      "comment": "",
+      "command": "type",
+      "target": "css=.TextArea",
+      "targets": [
+        ["css=.TextArea", "css:finder"],
+        ["xpath=//app-description[@id='description']/fl-bit/fl-textarea/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "this project will be used used for faculty and students. admin will be faculty and user will be students."
+    }, {
+      "id": "ba6d4050-17eb-48c3-8735-063361846c29",
+      "comment": "",
+      "command": "click",
+      "target": "css=.FileSelectCustom-uploadBtn > .ButtonElement",
+      "targets": [
+        ["css=.FileSelectCustom-uploadBtn > .ButtonElement", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Attach files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d59f092-da8b-4004-a8da-47700b55724e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.FileSelectCustom-uploadBtn > .ButtonElement",
+      "targets": [
+        ["css=.FileSelectCustom-uploadBtn > .ButtonElement", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Attach files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed4ede99-50e1-4a47-9517-a122ac7034e3",
+      "comment": "",
+      "command": "type",
+      "target": "css=.HiddenInput",
+      "targets": [
+        ["css=.HiddenInput", "css:finder"],
+        ["xpath=//input[@type='file']", "xpath:attributes"],
+        ["xpath=//fl-file-select/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8451da6c-05cd-401e-9122-29469ab00594",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.FileSelectCustom-uploadBtn > .ButtonElement",
+      "targets": [
+        ["css=.FileSelectCustom-uploadBtn > .ButtonElement", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Attach files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f096d45-05a0-471a-bca9-db9642b5d70c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.NextButton .ButtonElement",
+      "targets": [
+        ["css=.NextButton .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//app-form/fl-bit/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1aa92a1-5ea0-4520-84ea-4952d7de55e3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c09edef2-e002-4c3b-a182-82bf2975c2cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c223-16:nth-child(3) svg",
+      "targets": [
+        ["css=.ng-tns-c223-16:nth-child(3) svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1506f281-7d1c-4d29-a084-68e80f52e81f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.NextButton .ButtonElement",
+      "targets": [
+        ["css=.NextButton .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[10]", "xpath:attributes"],
+        ["xpath=//app-form/fl-bit/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68dcda07-329a-460c-a33f-8d4636b56617",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2ef347ff-c463-4318-a7d0-4f0c357ec2ed",
+    "name": "Search_case",
+    "commands": [{
+      "id": "c145968f-85c1-4e11-b16b-a648e42573f5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b0fa309-0e0b-4b54-af2c-2803ce58eef7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "931x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1fcbb77e-0123-4193-8f06-1e2cad5ec53c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Browse Jobs",
+      "targets": [
+        ["linkText=Browse Jobs", "linkText"],
+        ["css=.NavigationItem:nth-child(3) > .LinkElement", "css:finder"],
+        ["xpath=//a[contains(text(),'Browse Jobs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/jobs')]", "xpath:href"],
+        ["xpath=//fl-link[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Browse Jobs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0be158e8-2e0f-473e-8b1d-2b7dfabdd9c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=keyword-input",
+      "targets": [
+        ["id=keyword-input", "id"],
+        ["name=search_keyword", "name"],
+        ["css=#keyword-input", "css:finder"],
+        ["xpath=//input[@id='keyword-input']", "xpath:attributes"],
+        ["xpath=//div[@id='location-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "262dd157-7ce0-4431-84a4-2227354ccc3b",
+      "comment": "",
+      "command": "type",
+      "target": "id=keyword-input",
+      "targets": [
+        ["id=keyword-input", "id"],
+        ["name=search_keyword", "name"],
+        ["css=#keyword-input", "css:finder"],
+        ["xpath=//input[@id='keyword-input']", "xpath:attributes"],
+        ["xpath=//div[@id='location-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "software devloper python"
+    }, {
+      "id": "1afbc7fe-95fa-4a76-a506-f2b27a46ed01",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-submit",
+      "targets": [
+        ["id=search-submit", "id"],
+        ["css=#search-submit", "css:finder"],
+        ["xpath=//button[@id='search-submit']", "xpath:attributes"],
+        ["xpath=//div[@id='location-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "598413a3-7c46-4085-af32-337c25bbc20f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1818b576-4962-484e-b765-48eace6132e5",
+    "name": "WrongUserLogin",
+    "commands": [{
+      "id": "01a2e215-f457-480e-b942-f60021bd9f87",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27efbc36-120a-45f3-939f-420af00d4f38",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "931x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "788373bb-80bb-412e-8677-42b9ffef5bd7",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailOrUsernameInput",
+      "targets": [
+        ["id=emailOrUsernameInput", "id"],
+        ["css=#emailOrUsernameInput", "css:finder"],
+        ["xpath=//input[@id='emailOrUsernameInput']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${username}"
+    }, {
+      "id": "80ceea74-7d83-4941-b4f3-1e614c8b07f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordInput",
+      "targets": [
+        ["id=passwordInput", "id"],
+        ["css=#passwordInput", "css:finder"],
+        ["xpath=//input[@id='passwordInput']", "xpath:attributes"],
+        ["xpath=//fl-input[2]/fl-bit/fl-bit/fl-bit/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ecf8c3b-f7e7-43db-b9f7-66382f37343b",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordInput",
+      "targets": [
+        ["id=passwordInput", "id"],
+        ["css=#passwordInput", "css:finder"],
+        ["xpath=//input[@id='passwordInput']", "xpath:attributes"],
+        ["xpath=//fl-input[2]/fl-bit/fl-bit/fl-bit/input", "xpath:position"]
+      ],
+      "value": "${password}"
+    }, {
+      "id": "6dadd576-61c8-4451-8121-0fdfb5adca48",
+      "comment": "",
+      "command": "click",
+      "target": "css=app-login-signup-button .ButtonElement",
+      "targets": [
+        ["css=app-login-signup-button .ButtonElement", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//app-login-signup-button/fl-button/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b3113c5-4196-4865-9e7b-54dc9e2cd9a5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.BannerAlertBox-desc > .NativeElement",
+      "targets": [
+        ["css=.BannerAlertBox-desc > .NativeElement", "css:finder"],
+        ["xpath=//fl-bit[2]/fl-text/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Incorrect email, username or password.')]", "xpath:innerText"]
+      ],
+      "value": "Incorrect email, username or password."
+    }, {
+      "id": "40db424b-ce03-4572-8d26-f811f0c11f70",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2ba47e95-4acf-4876-8c91-44fc83fc2231",
+    "name": "InvalidCredentials",
+    "commands": [{
+      "id": "93e94bc4-47ba-41c8-97dc-82c704533b98",
+      "comment": "",
+      "command": "store",
+      "target": "user1",
+      "targets": [],
+      "value": "username"
+    }, {
+      "id": "011d5e42-55e4-490a-bde6-48feb42c1eb1",
+      "comment": "",
+      "command": "run",
+      "target": "WrongUserLogin",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b6d77c9a-d870-4222-ac04-5140dd7e8c4e",
+    "name": "Project_type case",
+    "commands": [{
+      "id": "b43f4c7e-2d1e-4d4c-a37e-e808a6593a42",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.freelancer.com.bd/search/projects?projectSkills=13,39,104,320,662&projectLanguages=bn,en&projectSort=latest",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2a95cbb-6fc4-4942-930e-1948621da9e9",
+      "comment": "",
+      "command": "store",
+      "target": "Fixed price",
+      "targets": [],
+      "value": "varPrice"
+    }, {
+      "id": "a502a57b-3d4c-4a5e-bdee-2394126edd8e",
+      "comment": "",
+      "command": "if",
+      "target": "${varPrice}===\"Fixed price\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4635d49f-d43a-43c4-b5f4-a4f331d6006a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(3) > .ng-untouched > .ng-star-inserted:nth-child(1) .CheckboxLabel",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(3) > .ng-untouched > .ng-star-inserted:nth-child(1) .CheckboxLabel", "css:finder"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Fixed Price')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9920e4bd-55c2-4c10-8f66-e74269a35b8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c151-40 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-40 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[43]", "xpath:attributes"],
+        ["xpath=//fl-bit[2]/app-search-results-sorting-options/fl-bit/fl-dropdown-filter/fl-callout/fl-callout-trigger/fl-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c886d1e5-0040-4577-ad98-53078c3cc05b",
+      "comment": "",
+      "command": "click",
+      "target": "css=fl-list-item:nth-child(3) .BitsListItemContent > .ng-star-inserted > .NativeElement",
+      "targets": [
+        ["css=fl-list-item:nth-child(3) .BitsListItemContent > .ng-star-inserted > .NativeElement", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-1']/div/fl-callout-content/div/div/fl-text/div/fl-list/fl-list-item[3]/fl-bit/fl-bit/fl-bit/fl-bit/fl-text/div", "xpath:idRelative"],
+        ["xpath=//fl-list-item[3]/fl-bit/fl-bit/fl-bit/fl-bit/fl-text/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83c867ca-8838-4b86-b76b-8a45c8563c13",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4e47fb2-889c-482a-b757-78c02a8f3612",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(3) > .ng-untouched > .ng-star-inserted:nth-child(2) .CheckboxLabel",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(3) > .ng-untouched > .ng-star-inserted:nth-child(2) .CheckboxLabel", "css:finder"],
+        ["xpath=//fl-bit[2]/fl-checkbox/fl-bit/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Hourly Rate')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06c92090-6b00-4b73-931d-3dd676efd174",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-star-inserted:nth-child(3) > .FilterLabel .LinkElement",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(3) > .FilterLabel .LinkElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[30]", "xpath:attributes"],
+        ["xpath=//fl-bit/fl-link/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Clear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2ebffa4-ce6f-4807-ad71-2b597fd39aed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-tns-c151-40 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-40 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[43]", "xpath:attributes"],
+        ["xpath=//fl-bit[2]/app-search-results-sorting-options/fl-bit/fl-dropdown-filter/fl-callout/fl-callout-trigger/fl-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f81a5c79-72ef-4b72-a5dd-ce25e124efa3",
+      "comment": "",
+      "command": "click",
+      "target": "css=fl-list-item:nth-child(2) .BitsListItemContent > .ng-star-inserted > .NativeElement",
+      "targets": [
+        ["css=fl-list-item:nth-child(2) .BitsListItemContent > .ng-star-inserted > .NativeElement", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-2']/div/fl-callout-content/div/div/fl-text/div/fl-list/fl-list-item[2]/fl-bit/fl-bit/fl-bit/fl-bit/fl-text/div", "xpath:idRelative"],
+        ["xpath=//fl-list-item[2]/fl-bit/fl-bit/fl-bit/fl-bit/fl-text/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44cf452a-201f-472e-ad89-2e590cfefba8",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e5008c09-773d-45d6-97cc-589305133fda",
+    "name": "Get_Help_validation",
+    "commands": [{
+      "id": "49fb3658-4e3e-45c9-8080-1e80e3b0df77",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.freelancer.com.bd/dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d49c70ad-13de-4c0f-9e59-893e58f21723",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fa18ddc-bdff-4bb5-a50f-780022aac395",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ng-tns-c151-10 .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-10 .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//fl-callout[4]/fl-callout-trigger/fl-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "634c470c-7ced-4070-b91f-5e82598ec964",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ng-tns-c151-10 > .NavigationItemBtn > .ButtonElement",
+      "targets": [
+        ["css=.ng-tns-c151-10 > .NavigationItemBtn > .ButtonElement", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//fl-callout[4]/fl-callout-trigger/fl-button/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15ce3647-bec7-4fc6-920f-8fe1c1fe0a7e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c899c147-95de-47cc-be21-92cddb220334",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Support",
+      "targets": [
+        ["linkText=Support", "linkText"],
+        ["css=app-menu-item:nth-child(1) .LinkElement", "css:finder"],
+        ["xpath=//div[@id='cdk-overlay-0']/div/fl-callout-content/div/div/app-user-settings/fl-bit[3]/app-menu-settings/app-menu-item/fl-link/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/support/categories')]", "xpath:href"],
+        ["xpath=//app-menu-settings/app-menu-item/fl-link/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bed1780-b5f3-4aaa-b9db-94d8772bdcda",
+      "comment": "",
+      "command": "click",
+      "target": "id=support-get-help-btn",
+      "targets": [
+        ["id=support-get-help-btn", "id"],
+        ["css=#support-get-help-btn", "css:finder"],
+        ["xpath=//button[@id='support-get-help-btn']", "xpath:attributes"],
+        ["xpath=//form[@id='helpcenter-search-form']/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Get Help')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c757254-54cc-4f96-b997-503a84f6e313",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.SupportSearchResult-item",
+      "targets": [
+        ["css=.SupportSearchResult-item", "css:finder"],
+        ["xpath=//ul[@id='search-result-dropdown']/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Please fill out this field.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9faca44d-3978-4c33-b207-f24f6c67fbfe",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.SupportSearchResult-item",
+      "targets": [
+        ["css=.SupportSearchResult-item", "css:finder"],
+        ["xpath=//ul[@id='search-result-dropdown']/li", "xpath:idRelative"],
+        ["xpath=//li", "xpath:position"],
+        ["xpath=//li[contains(.,'Please fill out this field.')]", "xpath:innerText"]
+      ],
+      "value": "Please fill out this field."
+    }]
+  }],
+  "suites": [{
+    "id": "51f6f317-3376-40de-9911-810e0add1837",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.freelancer.com.bd/", "https://www.freelancer.com.bd/dashboard", "https://www.aiub.edu/", "https://www.freelancer.com.bd/user/settings/profile", "https://www.freelancer.com.bd/post-project", "https://www.freelancer.com.bd/support/freelancer/general/", "https://cx.freelancer.com/new-ticket", "https://www.freelancer.com.bd/search/projects?projectLanguages=bn,en&projectSkills=13,39,104,320,662", "https://www.freelancer.com.bd/search/projects?projectSkills=13,39,104,320,662&projectLanguages=bn,en&projectSort=latest"],
+  "plugins": []
+}
